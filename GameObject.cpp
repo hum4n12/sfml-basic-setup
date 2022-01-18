@@ -18,7 +18,7 @@ GameObject::GameObject(int x, int y, sf::Shape* shape, sf::Texture* texture,sf::
 	this->sprite.setTextureRect(rect);
 }
 
-void gobj::GameObject::draw(sf::RenderWindow* screen)
+void GameObject::draw(sf::RenderWindow* screen)
 {
 	if (this->texture != nullptr)
 	{
@@ -28,4 +28,9 @@ void gobj::GameObject::draw(sf::RenderWindow* screen)
 	{
 		screen->draw(*this->shape);
 	}
+}
+
+GameObject::~GameObject()
+{
+
 }
