@@ -1,7 +1,5 @@
 #include "GameObject.h"
 
-using namespace gobj;
-
 GameObject::GameObject(int x, int y, sf::Shape* shape) : x(x), y(y), shape(shape)
 {
 

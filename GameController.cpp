@@ -1,6 +1,5 @@
 #include "GameController.h"
 #include <iostream>
-using namespace gc;
 
 
 GameController::GameController(sf::RenderWindow* window) : window(window)
@@ -29,6 +28,9 @@ void GameController::init()
 void GameController::update(double delta)
 {
 	this->events();
+	for (auto &obj : gameObjects) {
+		obj.update(delta);
+	}
 }
 
 void GameController::draw()

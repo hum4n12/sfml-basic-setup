@@ -23,6 +23,7 @@ int main()
     return 0;
 }
 
+
 // Uruchomienie programu: Ctrl + F5 lub menu Debugowanie > Uruchom bez debugowania
 // Debugowanie programu: F5 lub menu Debugowanie > Rozpocznij debugowanie
 

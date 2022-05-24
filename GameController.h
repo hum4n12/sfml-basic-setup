@@ -1,20 +1,18 @@
 #pragma once
 #include "SFML/Graphics.hpp"
-namespace gc
+#include <vector>
+#include "GameObject.h"
+
+class GameController
 {
-
-	class GameController
-	{
-	public:
-		GameController(sf::RenderWindow* window);
-		void init();
-		void update(double delta);
-		void draw();
-	private:
-		sf::RenderWindow* window = nullptr;
-		sf::CircleShape* shape = nullptr;
-		void events();
-	};
-
-
-}
+public:
+	GameController(sf::RenderWindow* window);
+	void init();
+	void update(double delta);
+	void draw();
+private:
+	sf::RenderWindow* window = nullptr;
+	sf::CircleShape* shape = nullptr;
+	std::vector<GameObject> gameObjects;
+	void events();
+};
