@@ -10,7 +10,7 @@ public:
 	virtual void update(double delta) = 0;
 	virtual void draw(sf::RenderWindow* screen);
 	virtual ~GameObject();
-private:
+protected:
 	int x;
 	int y;
 	sf::Sprite sprite;
